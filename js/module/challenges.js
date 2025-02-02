@@ -120,7 +120,7 @@ const CHALLENGES = [
             return x
         },
         effDesc: x => formatMult(x), // 效果描述
-        reward: x => `能量提升星系能量获取 <b>${x}</b>.`, // 奖励描述
+        reward: x => `能量提升银河能量获取 <b>${x}</b>.`, // 奖励描述
 
         goal(c) { // 目标
             return E('ee5')

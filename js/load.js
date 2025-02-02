@@ -120,7 +120,7 @@ function doCreateGridElements() {
 
         html: `
         <button onclick="enterPSI()" class="grid-button">
-        扩张会强制重置星系能量。在扩张中，所有前星系资源和 <b>EED</b> 的时间速度会减少到指数的 <b>^0.75</b>，且升级 <b>F1</b> 和 <b>F12</b> 无效。Psi 精华 (<b class='iconly-delta'></b>) 根据你的能量生成。<br><br><div id="psi-text"></div>
+        扩张会强制重置银河能量。在扩张中，所有前星系资源和 <b>EED</b> 的时间速度会减少到指数的 <b>^0.75</b>，且升级 <b>F1</b> 和 <b>F12</b> 无效。灵能精华 (<b class='iconly-delta'></b>) 根据你的能量生成。<br><br><div id="psi-text"></div>
         </button>
         `, // HTML内容
 

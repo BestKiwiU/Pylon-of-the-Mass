@@ -661,7 +661,7 @@ const UPGRADES = {
         unl: () => player.chal.completion[5] > 0,
         pos: [23,1],
 
-        desc: `星系能量以降低的速率提升星星生成。`,
+        desc: `银河能量以降低的速率提升星星生成。`,
         curr: "energy_g",
 
         cost: E(1e19),
@@ -787,7 +787,7 @@ const UPGRADES = {
 
         get base() { return Decimal.add(3, upgradeEffect("G4",0)) },
 
-        get desc() { return `每级增加星系能量获取<b>${formatMult(this.base)}</b>。` },
+        get desc() { return `每级增加银河能量生成<b>${formatMult(this.base)}</b>。` },
         curr: "energy_g",
 
         cost: a => Decimal.pow(10,a.sumBasePO(Decimal.mul(0.1,simpleUpgradeEffect("F13")))).mul(1e7),
@@ -831,7 +831,7 @@ const UPGRADES = {
         unl: () => player.chal.completion[5] > 1,
         pos: [22,38],
 
-        desc: `星系能量提升能量生成速率。`,
+        desc: `银河能量提升能量生成速率。`,
         curr: "energy_g",
 
         cost: E(1e120),
@@ -846,7 +846,7 @@ const UPGRADES = {
         unl: () => player.chal.completion[5] > 2,
         pos: [23,40],
 
-        desc: `重置时被动生成<b>100%</b>的星系能量。`,
+        desc: `重置时被动生成<b>100%</b>的银河能量。`,
         curr: "energy_g",
 
         cost: E(1e190),
@@ -906,7 +906,7 @@ const UPGRADES = {
         unl: () => hasUpgrade("G1"),
         pos: [39,20],
 
-        desc: `星系能量提升灵能精华。`,
+        desc: `银河能量提升灵能精华。`,
         curr: "psi",
 
         cost: E(1e3),
@@ -925,7 +925,7 @@ const UPGRADES = {
 
         get base() { return Decimal.add(3, upgradeEffect("G4",0)) },
 
-        get desc() { return `Increase psi essence generation by <b>${formatMult(this.base)}</b> per level.` },
+        get desc() { return `每级增加灵能精华生成速率<b>${formatPow(this.base)}</b>。` },
         curr: "psi",
 
         cost: a => Decimal.pow(10,a.sumBasePO(Decimal.mul(0.1, simpleUpgradeEffect("G11")))).mul(1e7),
@@ -993,7 +993,7 @@ const UPGRADES = {
         unl: () => hasUpgrade("G2"),
         pos: [38,20],
 
-        desc: `充能能量提升 Psi 精华。`,
+        desc: `充能能量提升灵能精华。`,
         curr: "psi",
 
         cost: E(1e82),
@@ -1017,7 +1017,7 @@ const UPGRADES = {
         unl: () => hasUpgrade("G9"),
         pos: [40,22],
 
-        desc: `你可以在膨胀之外生成 Psi 精华。`,
+        desc: `你可以在膨胀之外生成灵能精华。`,
         curr: "psi",
 
         cost: E(1e105),
