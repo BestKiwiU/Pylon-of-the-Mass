@@ -865,7 +865,7 @@ const UPGRADES = {
             let x = player.galactic.energy.max(10).log10().log10()
             return x
         },
-        effDesc: x => "+"+format(x)+" to exponent",
+        effDesc: x => "+"+format(x)+"到指数",
     },
     "F13": {
         unl: () => hasUpgrade("UNLOCK4"),
@@ -890,7 +890,7 @@ const UPGRADES = {
 
         get base() { return Decimal.add(2, upgradeEffect("G4",0)) },
 
-        get desc() { return `每级增加能量生成速率<b>${formatPow(this.base)}</b>。` },
+        get desc() { return `每级增加能量生成速率<b>${formatMult(this.base)}</b>。` },
         curr: "psi",
 
         cost: a => Decimal.pow(10,a.sumBasePO(Decimal.mul(0.1, simpleUpgradeEffect("G11")))).mul(10),
