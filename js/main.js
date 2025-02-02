@@ -229,7 +229,7 @@ const TABS = [
                 <a href="https://discord.gg/mrredshark77-club-710184682620190731"><b>Discord</b></a><br>
                 <a href="https://boosty.to/mrredshark77/donate"><b>捐赠 (Boosty)</b></a>
                 <br><br>
-                提示：通过点击和拖拽来移动。如果文字太小，可以尝试折算页面。
+                提示：通过点击和拖拽来移动。如果文字太小，可以尝试缩放页面。
             </div>
             `;
 
