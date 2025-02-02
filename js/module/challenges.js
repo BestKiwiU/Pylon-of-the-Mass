@@ -173,9 +173,9 @@ function setupChallenges() {
 
                 let u = c.effDesc ? c.effDesc(tmp.chal_effect[i]) + (comp ? " " : " ➜ " + c.effDesc(c.effect(lvl+1))) : ""
 
-                h += `<div>${c.desc(lvl)}</div><div>Reward: ${c.reward(u)}</div>`
+                h += `<div>${c.desc(lvl)}</div><div>奖励: ${c.reward(u)}</div>`
 
-                if (!comp) h += `<div>Goal: ${format(goal,0)} ${curr.name}</div>`
+                if (!comp) h += `<div>目标: ${format(goal,0)} ${curr.name}</div>`
 
                 c_el.innerHTML = h
                 c_el.className = el_classes({"grid-button": true, bought: comp, locked: !comp && chalActive(i) && curr.amount.lt(goal)})
