@@ -890,7 +890,7 @@ const UPGRADES = {
 
         get base() { return Decimal.add(2, upgradeEffect("G4",0)) },
 
-        get desc() { return `每级增加能量生成速率<b>${formatMult(this.base)}</b>。` },
+        get desc() { return `每级增加能量生成速率<b>${formatPow(this.base)}</b>。` },
         curr: "psi",
 
         cost: a => Decimal.pow(10,a.sumBasePO(Decimal.mul(0.1, simpleUpgradeEffect("G11")))).mul(10),
@@ -925,7 +925,7 @@ const UPGRADES = {
 
         get base() { return Decimal.add(3, upgradeEffect("G4",0)) },
 
-        get desc() { return `每级增加灵能精华生成速率<b>${formatPow(this.base)}</b>。` },
+        get desc() { return `每级增加灵能精华生成速率<b>${formatMult(this.base)}</b>。` },
         curr: "psi",
 
         cost: a => Decimal.pow(10,a.sumBasePO(Decimal.mul(0.1, simpleUpgradeEffect("G11")))).mul(1e7),
