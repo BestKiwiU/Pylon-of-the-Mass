@@ -960,7 +960,7 @@ const UPGRADES = {
         unl: () => hasUpgrade("G4"),
         pos: [39,21],
 
-        desc: `<b>G4</b> 现在以 10% 的比例影响 <b>F8</b> 的基础值。`,
+        desc: `<b>G4</b> 现在以 10% 的效果影响 <b>F8</b> 的基础值。`,
         curr: "psi",
 
         cost: E(1e30),
@@ -1026,7 +1026,7 @@ const UPGRADES = {
         unl: () => hasUpgrade("G10"),
         pos: [38,22],
 
-        desc: `<b>F1</b> 现在以大幅降低的比例影响 <b>B6</b>, <b>G1</b>, 和 <b>G3</b> 的成本。`,
+        desc: `<b>F1</b> 现在以大幅降低的效果影响 <b>B6</b>, <b>G1</b>, 和 <b>G3</b> 的成本。`,
         curr: "psi",
 
         cost: E('1e588'),
