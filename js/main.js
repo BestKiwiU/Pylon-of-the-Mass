@@ -207,12 +207,12 @@ const TABS = [
         get html() {
             let h = `
          <div class="table-center">
-                <button class="tiny-btn" onclick="保存()">保存</button>
-                <button class="tiny-btn" onclick="导出到剪贴板()">导出到剪贴板</button>
-                <button class="tiny-btn" onclick="导出到文件()">导出到文件</button>
-                <button class="tiny-btn" onclick="从剪贴板导入()">从剪贴板导入</button>
-                <button class="tiny-btn" onclick="从文件导入()">从文件导入</button>
-                <button class="tiny-btn" id="重置" onclick="确认重置()">重置!!!</button>
+                <button class="tiny-btn" onclick="save()">保存</button>
+                <button class="tiny-btn" onclick="export_copy()">导出到剪贴板</button>
+                <button class="tiny-btn" onclick="exporty()">导出到文件</button>
+                <button class="tiny-btn" onclick="importy()">从剪贴板导入</button>
+                <button class="tiny-btn" onclick="importy_file()">从文件导入</button>
+                <button class="tiny-btn" id="wipe" onclick="wipeConfirm()">重置!!!</button>
             </div>
             `;
 
