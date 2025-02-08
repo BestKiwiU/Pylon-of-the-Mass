@@ -7,7 +7,7 @@ function loop() {
     updateTemp()
     diff = Date.now()-date;
     updateHTML()
-    calc(diff/10000)
+    calc(diff/10)
     date = Date.now()
 
     player.saved_cam = camera_pos
